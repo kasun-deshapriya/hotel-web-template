@@ -1,0 +1,60 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container for the gallery */
+.gallery-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Each row containing 2 images */
+.gallery-row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Individual image items */
+.image-item {
+    width: 48%; /* 48% to leave some space between two images in a row */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.image-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease, z-index 0.3s ease;
+}
+
+/* Hover effect to enlarge the hovered image significantly */
+.image-item:hover {
+    z-index: 10;
+}
+
+.image-item:hover img {
+    transform: scale(1.5); /* Increase the size significantly */
+    z-index: 10;
+}
+
+/* Blur all non-hovered images and other content */
+.gallery-container:hover .image-item:not(:hover) img {
+    filter: blur(5px);
+    transform: scale(1); /* Keep non-hovered images at the same size */
+}
+
+/* Make the other images and content slightly darker during hover */
+.gallery-container:hover .image-item:not(:hover) {
+    opacity: 0.6;
+}
