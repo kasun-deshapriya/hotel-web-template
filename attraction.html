@@ -32,6 +32,95 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/specialOffers.css">
 
+    <style>
+
+    body {
+        /* background-color: #6a5acd;  */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .attraction-container {
+        width: 86%;
+        margin: 20px auto;
+    }
+    .attraction-card {
+        background-color: #0f172b; /* Dark background like the header */
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        display: flex;
+        padding: 15px;
+        opacity: 0;
+        transform: translateY(50px); /* Start from below */
+        animation: fadeInUp 1s forwards ease-out; /* Animation */
+    }
+    /* Adjust animation delay for each card */
+    .attraction-card:nth-child(1) { animation-delay: 0.2s; }
+    .attraction-card:nth-child(2) { animation-delay: 0.4s; }
+    .attraction-card:nth-child(3) { animation-delay: 0.6s; }
+    .attraction-card:nth-child(4) { animation-delay: 0.8s; }
+    .attraction-card:nth-child(5) { animation-delay: 1s; }
+    .attraction-card:nth-child(6) { animation-delay: 1.2s; }
+    .attraction-card:nth-child(7) { animation-delay: 1.4s; }
+    .attraction-card:nth-child(8) { animation-delay: 1.6s; }
+    .attraction-card:nth-child(9) { animation-delay: 1.8s; }
+    .attraction-card:nth-child(10) { animation-delay: 2s; }
+    .attraction-card:nth-child(11) { animation-delay: 2.2s; }
+    .attraction-card:nth-child(12) { animation-delay: 2.4s; }
+    .attraction-card:nth-child(13) { animation-delay: 2.6s; }
+    .attraction-card:nth-child(14) { animation-delay: 2.8s; }
+    .attraction-card:nth-child(15) { animation-delay: 3s; }
+    
+    .attraction-card img {
+        width: 400px;
+        height: 275px;
+        border-radius: 8px;
+        margin-right: 20px;
+    }
+    .attraction-info {
+        width: 60%;
+    }
+    .attraction-info h4 {
+        color:#fea116; /* Primary blue color */
+        margin: 0 0 10px;
+    }
+    .attraction-info p {
+        margin: 0 0 10px;
+        color: #dcdcdc; /* Slightly lighter text for description */
+    }
+    .attraction-info button {
+        background-color: #fea116; /* Primary color for button */
+        color: white;
+        border: none;
+        padding: 3px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+       
+    }
+    .attraction-info button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    /* Keyframes for the fade-in and slide-up animation */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px); /* Start below */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Move to the normal position */
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -126,13 +215,186 @@
         </div>
         <!-- Page Header End -->
 
+        
+    <!-- Booking Start -->
+    <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="bg-white shadow" style="padding: 35px;">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-3">
+                                <div class="date" id="date1" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input"
+                                        placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="date" id="date2" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-select">
+                                    <option selected>Adult</option>
+                                    <option value="1">Adult 1</option>
+                                    <option value="2">Adult 2</option>
+                                    <option value="3">Adult 3</option>
+                                    <option value="3">Adult 4</option>
+                                    <option value="3">Adult 5</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-select">
+                                    <option selected>Child</option>
+                                    <option value="1">Child 1</option>
+                                    <option value="2">Child 2</option>
+                                    <option value="3">Child 3</option>
+                                    <option value="3">Child 4</option>
+                                    <option value="3">Child 5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary w-100">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+
+
+
+
 
 
 
 
     
 
-     <!-- Newsletter Start -->
+        <div class="attraction-container">
+            <!-- 15 Attraction Cards -->
+
+
+
+            <div class="attraction-card">
+                <img src="img/tmple.jpg" alt="Attraction 1">
+                <div class="attraction-info">
+                    <h4> Temple of the Tooth - 15 Min</h4>
+                    <p>Sri Dalada Maligawa, commonly known in English as the Temple of the Sacred Tooth Relic, is a Buddhist temple in Kandy,
+                        
+                        Sri Lanka. It is located in the Royal Palace Complex of the former Kingdom of Kandy, which houses the relic of the tooth of the Buddha.
+                        <br> <br> Since ancient times, the relic has played an important role 
+                        in local politics because it is believed that whoever holds the relic holds the governance of the country.The relic was
+                         historically held by Sinhalese kings. The temple of the tooth is a World Heritage Site mainly due to the 
+                        temple and the relic.</p>
+                    
+                    <button onclick="window.location.href='https://en.wikipedia.org/wiki/Temple_of_the_Tooth';">More</button>
+                </div>
+            </div>
+            
+            <div class="attraction-card">
+                <img src="img/esala.jpg" alt="Attraction 2">
+                <div class="attraction-info">
+                    <h4>"Kandy Esala Perahera" (Cultural Parade) - 10 Min</h4>
+                    <p>The Kandy Esala Perahera is one of the oldest and grandest
+                         festivals in Sri Lanka, featuring dancers, jugglers, musicians, 
+                         fire-breathers, and lavishly decorated elephants. ​</p>
+                         <p> 16 - 20 Aug 2018 :  "Kumbal Perahera" </p>
+                         <p>21 - 25 Aug 2018 :  "Randoli Perahera"</p>
+                    <button onclick="window.location.href='https://en.wikipedia.org/wiki/Kandy_Esala_Perahera';">More</button>
+                </div>
+            </div>
+    
+           
+    
+            <div class="attraction-card">
+                <img src="img/lake.jpg" alt="Attraction 3">
+                <div class="attraction-info">
+                    <h4>Kandy Lake - 15 Min</h4>
+                    <p>Kandy Lake, also known as Kiri Muhuda or the Sea of Milk, is an artificial lake in 
+                        the heart of the hill city of Kandy,
+                         Sri Lanka, built in 1807 by King Sri Wickrama Rajasinghe next to the Temple of the Tooth.<br><br>
+                         The lake in front of the Temple of the Tooth was formerly a stretch of paddy fields known as Tigolwela. 
+                         It was converted to a lake by King Sri Wickrama Rajasinha in 1807. As there had been a pond named Kiri-muhuda (a "sea of milk") in the middle of the Tigolwela,
+                          the lake constructed subsequently too was named Kiri-muhuda</p>
+                          <button onclick="window.location.href='https://en.wikipedia.org/wiki/Kandy_Lake';">
+                            More
+                        </button>
+                        
+                </div>
+            </div>
+    
+            <div class="attraction-card">
+                <img src="https://via.placeholder.com/200x150" alt="Attraction 4">
+                <div class="attraction-info">
+                    <h3>Attraction 4</h3>
+                    <p>Description of Attraction 4.</p>
+                    <button>More</button>
+                </div>
+            </div>
+    
+            <div class="attraction-card">
+                <img src="https://via.placeholder.com/200x150" alt="Attraction 5">
+                <div class="attraction-info">
+                    <h3>Attraction 5</h3>
+                    <p>Description of Attraction 5.</p>
+                    <button>More</button>
+                </div>
+            </div>
+    
+            <div class="attraction-card">
+                <img src="https://via.placeholder.com/200x150" alt="Attraction 6">
+                <div class="attraction-info">
+                    <h3>Attraction 6</h3>
+                    <p>Description of Attraction 6.</p>
+                    <button>More</button>
+                </div>
+            </div>
+    
+            <div class="attraction-card">
+                <img src="https://via.placeholder.com/200x150" alt="Attraction 7">
+                <div class="attraction-info">
+                    <h3>Attraction 7</h3>
+                    <p>Description of Attraction 7.</p>
+                    <button>More</button>
+                </div>
+            </div>
+    
+            <div class="attraction-card">
+                <img src="https://via.placeholder.com/200x150" alt="Attraction 8">
+                <div class="attraction-info">
+                    <h3>Attraction 8</h3>
+                    <p>Description of Attraction 8.</p>
+                    <button>More</button>
+                </div>
+            </div>
+    
+            <div class="attraction-card">
+                <img src="https://via.placeholder.com/200x150" alt="Attraction 9">
+                <div class="attraction-info">
+                    <h3>Attraction 9</h3>
+                    <p>Description of Attraction 9.</p>
+                    <button>More</button>
+                </div>
+            </div>
+    
+            <div class="attraction-card">
+                <img src="https://via.placeholder.com/200x150" alt="Attraction 10">
+                <div class="attraction-info">
+                    <h3>Attraction 10</h3>
+                    <p>Description of Attraction 10.</p>
+                    <button>More</button>
+                </div>
+            </div>
+    
+            
+            
+
+             <!-- Newsletter Start -->
      <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="row justify-content-center">
             <div class="col-lg-10 border rounded p-1">
@@ -149,7 +411,6 @@
         </div>
     </div>
     <!-- Newsletter Start -->
-
 
 
 
