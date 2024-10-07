@@ -806,6 +806,7 @@
                             <a href="">Help</a>
                             <a href="">FQAs</a>
                         </div>
+                        <a href="#" class="btn btn-lg btn-primary btn-lg-square "><i class="bi bi-arrow-up"></i></a>
                     </div>
                 </div>
             </div>
@@ -814,8 +815,91 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
+        
+    </div>  
+
+    <style>
+
+/* Styling for smaller screens */
+@media (max-width: 768px) {
+    .footer .container {
+        padding: 0 20px;
+    }
+
+    /* Adjust columns stacking for mobile */
+    .footer .col-md-6, .footer .col-lg-4, .footer .col-lg-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Centralize text for mobile */
+    .footer .text-md-start {
+        text-align: center !important;
+    }
+
+    .footer .btn-social {
+        margin: 0 5px;
+    }
+
+    /* Adjust the padding and size of social buttons */
+    .footer .btn-social {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    /* Footer links alignment */
+    .footer .btn-link {
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .footer .copyright .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-menu {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .footer .footer-menu a {
+        margin: 0 10px;
+    }
+
+    /* Adjust scroll to top button */
+    .footer .btn-lg-square {
+        display: block;
+        margin: 20px auto;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Styling for extra small screens (below 576px) */
+@media (max-width: 576px) {
+    .footer .col-md-6 {
+        margin-bottom: 10px;
+    }
+
+    .footer .btn-social {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer h6 {
+        font-size: 16px;
+    }
+
+    .footer p, .footer .btn-link {
+        font-size: 14px;
+    }
+}
+
+    </style>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

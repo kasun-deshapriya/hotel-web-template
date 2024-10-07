@@ -31,94 +31,8 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     
-    <style>
+    <link  href="css/attraction.css" rel="stylesheet">
 
-    body {
-        /* background-color: #6a5acd;  */
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    .attraction-container {
-        width: 86%;
-        margin: 20px auto;
-    }
-    .attraction-card {
-        background-color: #0f172b; /* Dark background like the header */
-        color: white;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        overflow: hidden;
-        display: flex;
-        padding: 15px;
-        opacity: 0;
-        transform: translateY(50px); /* Start from below */
-        animation: fadeInUp 1s forwards ease-out; /* Animation */
-    }
-    /* Adjust animation delay for each card */
-    .attraction-card:nth-child(1) { animation-delay: 0.2s; }
-    .attraction-card:nth-child(2) { animation-delay: 0.4s; }
-    .attraction-card:nth-child(3) { animation-delay: 0.6s; }
-    .attraction-card:nth-child(4) { animation-delay: 0.8s; }
-    .attraction-card:nth-child(5) { animation-delay: 1s; }
-    .attraction-card:nth-child(6) { animation-delay: 1.2s; }
-    .attraction-card:nth-child(7) { animation-delay: 1.4s; }
-    .attraction-card:nth-child(8) { animation-delay: 1.6s; }
-    .attraction-card:nth-child(9) { animation-delay: 1.8s; }
-    .attraction-card:nth-child(10) { animation-delay: 2s; }
-    .attraction-card:nth-child(11) { animation-delay: 2.2s; }
-    .attraction-card:nth-child(12) { animation-delay: 2.4s; }
-    .attraction-card:nth-child(13) { animation-delay: 2.6s; }
-    .attraction-card:nth-child(14) { animation-delay: 2.8s; }
-    .attraction-card:nth-child(15) { animation-delay: 3s; }
-    
-    .attraction-card img {
-        width: 400px;
-        height: 275px;
-        border-radius: 8px;
-        margin-right: 20px;
-    }
-    .attraction-info {
-        width: 60%;
-    }
-    .attraction-info h4 {
-        color:#fea116; /* Primary blue color */
-        margin: 0 0 10px;
-    }
-    .attraction-info p {
-        margin: 0 0 10px;
-        color: #dcdcdc; /* Slightly lighter text for description */
-    }
-    .attraction-info button {
-        background-color: #fea116; /* Primary color for button */
-        color: white;
-        border: none;
-        padding: 3px 12px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-       
-    }
-    .attraction-info button:hover {
-        background-color: #0056b3; /* Darker blue on hover */
-    }
-
-    p {
-        text-align: justify;
-    }
-
-    /* Keyframes for the fade-in and slide-up animation */
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(50px); /* Start below */
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0); /* Move to the normal position */
-        }
-    }
-</style>
 
 </head>
 
@@ -265,263 +179,155 @@
 
 
 
-
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title text-center text-primary text-uppercase">Within Kandy City</h6>
-               
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title text-center text-primary text-uppercase">Within Kandy City</h6>
+          </div>
+      
+          <div class="attraction-container">
+            <div class="attraction-card">
+              <img src="img/tmple.jpg" alt="Attraction 1">
+              <div class="attraction-info">
+                <h4>Temple of the Tooth - 15 Min</h4>
+                <p>Sri Dalada Maligawa, commonly known in English as the Temple of the Sacred Tooth Relic, is a Buddhist temple in Kandy, Sri Lanka. It is located in the Royal Palace Complex of the former Kingdom of Kandy, which houses the relic of the tooth of the Buddha.</p>
+                <p>Since ancient times, the relic has played an important role in local politics because it is believed that whoever holds the relic holds the governance of the country.The relic was historically held by Sinhalese kings. The temple of the tooth is a World Heritage Site mainly due to the temple and the relic.</p>
+                <button onclick="window.location.href='https://en.wikipedia.org/wiki/Temple_of_the_Tooth';">More</button>
+              </div>
             </div>
+      
+            <div class="attraction-card">
+              <img src="img/esala5.jpg" alt="Attraction 2">
+              <div class="attraction-info">
+                <h4>"Kandy Esala Perahera" (Cultural Parade) - 10 Min</h4>
+                <p>The Kandy Esala Perahera (the Sri Dalada Perahara procession of Kandy) also known as The Festival of the Tooth is a festival held in July and August in Kandy, Sri Lanka.</p>
+                <p>This historical procession is held annually to pay homage to the Sacred Tooth Relic of Buddha housed at the Sri Dalada Maligawa in Kandy. A unique symbol of Sri Lanka, the procession consists of traditional local dances such as fire dances and performances in whip-dance garments</p>
+                <button onclick="window.location.href='https://en.wikipedia.org/wiki/Kandy_Esala_Perahera';">More</button>
+              </div>
+            </div>
+      
+            <div class="attraction-card">
+              <img src="img/lake.jpg" alt="Attraction 3">
+              <div class="attraction-info">
+                <h4>Kandy Lake - 15 Min</h4>
+                <p>Kandy Lake, also known as Kiri Muhuda or the Sea of Milk, is an artificial lake in the heart of the hill city of Kandy, Sri Lanka, built in 1807 by King Sri Wickrama Rajasinghe next to the Temple of the Tooth.</p>
+                <p>The lake in front of the Temple of the Tooth was formerly a stretch of paddy fields known as Tigolwela. It was converted to a lake by King Sri Wickrama Rajasinha in 1807. As there had been a pond named Kiri-muhuda (a "sea of milk") in the middle of the Tigolwela, the lake constructed subsequently too was named Kiri-muhuda</p>
+                <button onclick="window.location.href='https://en.wikipedia.org/wiki/Kandy_Lake';">More</button>
+              </div>
+            </div>
+      
+            <div class="attraction-card">
+              <img src="img/royal.jpg" alt="Attraction 4">
+              <div class="attraction-info">
+                <h4>Royal Palace of Kandy - 15 Min</h4>
+                <p>The Royal Palace of Kandy, situated in Kandy, Sri Lanka, is a historical complex that served as the official residence for the monarchs of the Kingdom of Kandy until the advent of British colonial rule in 1815.</p>
+                <p>It is noteworthy for its adherence to traditional Kandyan architectural styles, the buildings within the palace complex contains well-preserved examples of intricate woodwork, finely crafted stone carvings, and ornate wall murals. This complex encompasses a range of structures, including the Audience Hall, the Queen's Palace, the King's Palace, and the Temple of the Tooth Relic, a venerated Buddhist temple with global significance</p>
+                <button onclick="window.location.href='https://en.wikipedia.org/wiki/Royal_Palace_Complex_of_Kandy';">More</button>
+              </div>
+            </div>
+      
+            <div class="attraction-card">
+              <img src="img/view2.jpg" alt=" Attraction 5">
+              <div class="attraction-info">
+                <h4>View Point - 10 Min</h4>
+                <p>The Kandy View Point is a scenic lookout point located in the heart of Kandy, Sri Lanka. It offers a panoramic view of the city and the surrounding hills.</p>
+                <p>The View Point is situated near the Royal Palace Complex and the Temple of the Tooth Relic. It is a popular tourist destination, especially during sunset when the city takes on a golden hue.</p>
+                <button onclick="window.location.href='https://en.wikipedia.org/wiki/Kandy_View_Point';">More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-
-
-
-
+      <!-- Newsletter Start -->
+      <div class="container newsletter mt-10 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 150px;">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 border rounded p-1">
+                <div class="border rounded text-center p-1">
+                    <div class="bg-white rounded text-center p-5">
+                        <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter end -->
     
 
-        <div class="attraction-container">
-            <!-- 15 Attraction Cards -->
-
-
-
-            <div class="attraction-card">
-                <img src="img/tmple.jpg" alt="Attraction 1">
-                <div class="attraction-info">
-                    <h4> Temple of the Tooth - 15 Min</h4>
-                    <p>Sri Dalada Maligawa, commonly known in English as the Temple of the Sacred Tooth Relic, is a Buddhist temple in Kandy,
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+        <div class="container " style="margin-left: 15%;">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-primary rounded p-4">
+                        <a href="index.html"><h1 class="text-white text-uppercase mb-3">Hill Roost</h1></a>
+                        <p class="text-white mb-0" style="text-align: justify;">
+                            A luxury tourist residence provides accommodation with a unique boutique hotel concept Calm, relaxing and elegant environment with excellent mountain views
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" >
+                    <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>274/A/3, Udadama, Ampitiya, Kandy, Sri Lanka</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+94-71-17-00175</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>hillroostkandy@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/hillroostkandy/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.booking.com/hotel/lk/hill-roost.en-gb.html" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-bed"></i> <!-- Example icon for Booking.com -->
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.tripadvisor.ca/Hotel_Review-g11914132-d15015697-Reviews-Hill_Roost-Ampitiya_Kandy_District_Central_Province.html" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-tripadvisor"></i> <!-- TripAdvisor icon -->
+                        </a>
                         
-                        Sri Lanka. It is located in the Royal Palace Complex of the former Kingdom of Kandy, which houses the relic of the tooth of the Buddha.
-                        <br> <br> Since ancient times, the relic has played an important role 
-                        in local politics because it is believed that whoever holds the relic holds the governance of the country.The relic was
-                         historically held by Sinhalese kings. The temple of the tooth is a World Heritage Site mainly due to the 
-                        temple and the relic.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="row gy-5 g-4">
+                        <div class="col-md-6" style="margin-left:10%;">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
+                            <a class="btn btn-link" href="">About Us</a>
+                            <a class="btn btn-link" href="">Contact Us</a>
+                            <a class="btn btn-link" href="">Privacy Policy</a>
+                            <a class="btn btn-link" href="">Terms & Condition</a>
+                            <a class="btn btn-link" href="">Support</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    
+     <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">HillRoots</a>, All Right Reserved. 
                     
-                    <button onclick="window.location.href='https://en.wikipedia.org/wiki/Temple_of_the_Tooth';">More</button>
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://ceyinfo.com/">Ceyinfo Solutions (pvt) Ltd. </a>
                 </div>
-            </div>
-            
-            <div class="attraction-card">
-                <img src="img/esala5.jpg" alt="Attraction 2">
-                <div class="attraction-info">
-                    <h4>"Kandy Esala Perahera" (Cultural Parade) - 10 Min</h4>
-                    <p>The Kandy Esala Perahera (the Sri Dalada Perahara procession of Kandy) also known as The Festival of the Tooth is
-                         a festival held in July and August in Kandy, Sri Lanka.<br><br> This historical procession is held annually to pay homage to 
-                         the Sacred Tooth Relic of Buddha housed at the Sri Dalada Maligawa in Kandy. A unique symbol of Sri Lanka,
-                         the procession consists of traditional local dances such as fire dances and performances in whip-dance garments</p>
-                    <button onclick="window.location.href='https://en.wikipedia.org/wiki/Kandy_Esala_Perahera';">More</button>
-                </div>
-            </div>
-    
-           
-    
-            <div class="attraction-card">
-                <img src="img/lake.jpg" alt="Attraction 3">
-                <div class="attraction-info">
-                    <h4>Kandy Lake - 15 Min</h4>
-                    <p>Kandy Lake, also known as Kiri Muhuda or the Sea of Milk, is an artificial lake in 
-                        the heart of the hill city of Kandy,
-                         Sri Lanka, built in 1807 by King Sri Wickrama Rajasinghe next to the Temple of the Tooth.<br><br>
-                         The lake in front of the Temple of the Tooth was formerly a stretch of paddy fields known as Tigolwela. 
-                         It was converted to a lake by King Sri Wickrama Rajasinha in 1807. As there had been a pond named Kiri-muhuda (a "sea of milk") in the middle of the Tigolwela,
-                          the lake constructed subsequently too was named Kiri-muhuda</p>
-                          <button onclick="window.location.href='https://en.wikipedia.org/wiki/Kandy_Lake';">
-                            More
-                        </button>
-                        
-                </div>
-            </div>
-    
-            <div class="attraction-card">
-                <img src="img/royal.jpg" alt="Attraction 4">
-                <div class="attraction-info">
-                    <h4> Royal Palace of Kandy - 15 Min</h4>
-                    <p>The Royal Palace of Kandy, situated in Kandy, Sri Lanka, is a historical complex that served as the official
-                         residence 
-                        for the monarchs of the Kingdom of Kandy until the advent of British colonial rule in 1815. <br><br>
-                        
-                        It is noteworthy for its adherence to traditional Kandyan architectural styles, the buildings within
-                         the palace complex contains well-preserved examples of intricate woodwork, finely crafted stone carvings, 
-                         
-                         and ornate wall murals. This complex encompasses a range of structures, including the Audience Hall, the
-                          Queen's Palace, the King's Palace, and the Temple of the Tooth Relic, a venerated Buddhist temple with global
-                           significance</p>
-                    <button onclick="window.location.href='https://en.wikipedia.org/wiki/Royal_Palace_Complex_of_Kandy';">More</button>
-                </div>
-            </div>
-    
-            <div class="attraction-card">
-                <img src="img/view2.jpg" alt="Attraction 5">
-                <div class="attraction-info">
-                    <h4>Kandy View Point</h4>
-                    <p>The Kandy View Point is a popular tourist attraction located in the heart of Kandy, Sri Lanka. 
-                        It offers a panoramic view of the city and its surrounding landscape, including 
-                        the iconic Kandy Lake, the Sacred Temple of the Tooth Relic, and the lush green hills that 
-                        encircle the area <br> <br>
-                        The viewpoint is situated on Rajapihilla Mawatha, a road that climbs uphill from the city center. It’s about a 
-                        10-minute drive or a 20-25 minute walk from the Temple of the Tooth Relic and the Kandy Lake area.</p>
-                    <button onclick="window.location.href='https://forevervacation.com/kandy/kandy-viewpoint';">More</button>
-                </div>
-            </div>
-    
-            <div class="attraction-card">
-                <img src="img/bahirawakand.jpg" alt="Attraction 6">
-                <div class="attraction-info">
-                    <h4>Bahirawakanda Buddha Statue - 20 Min</h4>
-                    <p>Bahirawakanda is a village in the centre of the Kandy, Sri Lanka. In Sinhala, Bahirawa Kanda translates to mountain of 
-                        Bahirawa. According to Sri Lankan myths, Bahirawa is a sanguinary deity associated with earth and territory protection. <br><br>
-                      
-
-                        It is known for the Sri Maha Bodhi Viharaya, construction of which commenced in 1972, under the direction of Ven. 
-                        Ampitiye Dammarama Thero. 
-                        It was opened to the public on 1 January 1993, by President Ranasinghe Premadasa.</p>
-                    <button onclick="window.location.href='https://en.wikipedia.org/wiki/Bahirawakanda#:~:text=In%20Sinhala%2C%20Bahirawa%20Kanda%20translates,with%20earth%20and%20territory%20protection.&text=It%20is%20known%20for%20the,Ampitiye%20Dammarama%20Thero.';">More</button>
-                </div>
-            </div>
-
-
-
-
-            
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title text-center text-primary text-uppercase">Around Kandy</h6>
-               
-            </div>
-
-
-
-            <div class="attraction-card">
-                <img src="img/peradeniya.jpg" alt="Attraction 5">
-                <div class="attraction-info">
-                    <h4>Botanical Garden (Peradeniya) - 30 Min</h4>
-                    <p>Royal Botanic Gardens, Peradeniya are about 5.5 km to the west of the city of Kandy in the Central Province of Sri Lanka. 
-                        In 2016, the garden was visited by 1.2 million locals and 400,000 foreign visitors.It is near the Mahaweli River
-                         (the longest river in Sri Lanka). It is renowned for its collection of orchids.<br> <br> The garden includes more than 4000 species of plants,
-                          including orchids, spices, medicinal plants and palm trees.[3] Attached to it is the "National Herbarium of Sri Lanka". The total area 
-                          of the botanical garden is 147 acres (0.59 km2), at 460 meters 
-                        above sea level, and with a 200-day annual rainfall.</p>
-                    <button onclick="window.location.href='https://en.wikipedia.org/wiki/Royal_Botanic_Gardens,_Peradeniya';">More</button>
-                </div>
-            </div>
-    
-
-
-
-            <div class="attraction-card">
-                <img src="img/pinnawala.jpg" alt="Attraction 9">
-                <div class="attraction-info">
-                    <h4>Elephant orphanage (Pinnawala) - 1.5 hours</h4>
-                    <p>Pinnawala Elephant Orphanage , is a captive breeding and conservation institute
-                         for wild Asian elephants located at Pinnawala village, 13 km (8.1 mi) northeast of Kegalle town 
-                         in Sabaragamuwa Province of Sri Lanka. Pinnawala has the largest herd of captive elephants in the world. <br> <br>
-                        In 2023, there were 71 elephants, including 30 males and 41 females from 3 generations, living in Pinnawala.</p>
-                    <button onclick="window.location.href='https://en.wikipedia.org/wiki/Pinnawala_Elephant_Orphanage';" >More</button>
-                </div>
-            </div>
-    
-            <div class="attraction-card">
-                <img src="img/Sembuwatte_Lake,_Matale.jpg" alt="Attraction 10">
-                <div class="attraction-info">
-                    <h4>Sembuwatta Lake - 1.75 hours</h4>
-                    <p>Sembuwatta Lake is a tourist attraction situated at Elkaduwa in the Matale District of Sri Lanka, adjacent to the Campbell's Lane Forest Reserve. Sembuwatta Lake is a man-made lake created from natural spring water. 
-                        Alongside the lake is a natural swimming pool.<br> <br>
-
-                        Sembuwatta Lake is believed to be 9 m (30 ft) to 12 m (39 ft) deep. Currently, the lake belongs to the Elkaduwa Plantations and produces electricity for the nearby villagers. The lake and surrounds were renovated by Radley Dissage, the Elkaduwa Plantations estate superintendent, who connected the lake to nearby water fountains.[</p>
-                    <button onclick="window.location.href='https://en.wikipedia.org/wiki/Sembuwatta_Lake';">More</button>
-                </div>
-            </div>
-    
-            
-            
-
-            <div class="container newsletter mt-10 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 150px;">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10 border rounded p-1">
-                        <div class="border rounded text-center p-1">
-                            <div class="bg-white rounded text-center p-5">
-                                <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
-                                <div class="position-relative mx-auto" style="max-width: 400px;">
-                                    <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                    <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-md-6">
+                    <div class="footer-menu">
+                        <a href="">Home</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
                     </div>
+                    <a href="#" class="btn btn-lg btn-primary btn-lg-square"><i class="bi bi-arrow-up"></i></a>
                 </div>
             </div>
-            <!-- Newsletter Start -->
-            
-    
-            <!-- Footer Start -->
-            <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s" style="width: 1320px; margin-left: -110px; margin-bottom: -70px;">
-                <div class="container " style="margin-left: 15%;">
-                    <div class="row g-5">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="bg-primary rounded p-4">
-                                <a href="index.html"><h1 class="text-white text-uppercase mb-3">Hill Roost</h1></a>
-                                <p class="text-white mb-0" style="text-align: justify;">
-                                    A luxury tourist residence provides accommodation with a unique boutique hotel concept Calm, relaxing and elegant environment with excellent mountain views
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3" >
-                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
-                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>274/A/3, Udadama, Ampitiya, Kandy, Sri Lanka</p>
-                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+94-71-17-00175</p>
-                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>hillroostkandy@gmail.com</p>
-                            <div class="d-flex pt-2">
-                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/hillroostkandy/"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-light btn-social" href="https://www.booking.com/hotel/lk/hill-roost.en-gb.html" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-bed"></i> <!-- Example icon for Booking.com -->
-                                </a>
-                                <a class="btn btn-outline-light btn-social" href="https://www.tripadvisor.ca/Hotel_Review-g11914132-d15015697-Reviews-Hill_Roost-Ampitiya_Kandy_District_Central_Province.html" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-tripadvisor"></i> <!-- TripAdvisor icon -->
-                                </a>
-                                
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-12">
-                            <div class="row gy-5 g-4">
-                                <div class="col-md-6" style="margin-left:10%;">
-                                    <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
-                                    <a class="btn btn-link" href="">About Us</a>
-                                    <a class="btn btn-link" href="">Contact Us</a>
-                                    <a class="btn btn-link" href="">Privacy Policy</a>
-                                    <a class="btn btn-link" href="">Terms & Condition</a>
-                                    <a class="btn btn-link" href="">Support</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-            
-             <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">HillRoots</a>, All Right Reserved. 
-                            
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a class="border-bottom" href="https://ceyinfo.com/">Ceyinfo Solutions (pvt) Ltd. </a>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Footer End -->
+        </div>
+    </div>
+    <!-- Footer End -->
 
+        
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
 </div>
 
 <!-- JavaScript Libraries -->
