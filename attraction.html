@@ -235,9 +235,51 @@
                 <button onclick="window.location.href='https://en.wikipedia.org/wiki/Kandy_View_Point';">More</button>
               </div>
             </div>
-          </div>
+   
+                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h6 class="section-title text-center text-primary text-uppercase">Around Kandy</h6>  
+                    </div>
+
+               <div class="attraction-card">
+                <img src="img/peradeniya.jpg" alt="Attraction 5">
+                <div class="attraction-info">
+                    <h4>Botanical Garden (Peradeniya) - 30 Min</h4>
+                    <p>Royal Botanic Gardens, Peradeniya are about 5.5 km to the west of the city of Kandy in the Central Province of Sri Lanka. 
+                        In 2016, the garden was visited by 1.2 million locals and 400,000 foreign visitors.It is near the Mahaweli River
+                            (the longest river in Sri Lanka). It is renowned for its collection of orchids.<br> <br> The garden includes more than 4000 species of plants,
+                            including orchids, spices, medicinal plants and palm trees.[3] Attached to it is the "National Herbarium of Sri Lanka". The total area 
+                            of the botanical garden is 147 acres (0.59 km2), at 460 meters 
+                        above sea level, and with a 200-day annual rainfall.</p>
+                    <button onclick="window.location.href='https://en.wikipedia.org/wiki/Royal_Botanic_Gardens,_Peradeniya';">More</button>
+                </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <img src="img/pinnawala.jpg" alt="Attraction 9">
+                        <div class="attraction-info">
+                            <h4>Elephant orphanage (Pinnawala) - 1.5 hours</h4>
+                            <p>Pinnawala Elephant Orphanage , is a captive breeding and conservation institute
+                                 for wild Asian elephants located at Pinnawala village, 13 km (8.1 mi) northeast of Kegalle town 
+                                 in Sabaragamuwa Province of Sri Lanka. Pinnawala has the largest herd of captive elephants in the world. <br> <br>
+                                In 2023, there were 71 elephants, including 30 males and 41 females from 3 generations, living in Pinnawala.</p>
+                            <button onclick="window.location.href='https://en.wikipedia.org/wiki/Pinnawala_Elephant_Orphanage';" >More</button>
+                        </div>
+                    </div>
+            
+                    <div class="attraction-card">
+                        <img src="img/Sembuwatte_Lake,_Matale.jpg" alt="Attraction 10">
+                        <div class="attraction-info">
+                            <h4>Sembuwatta Lake - 1.75 hours</h4>
+                            <p>Sembuwatta Lake is a tourist attraction situated at Elkaduwa in the Matale District of Sri Lanka, adjacent to the Campbell's Lane Forest Reserve. Sembuwatta Lake is a man-made lake created from natural spring water. 
+                                Alongside the lake is a natural swimming pool.<br> <br>
+        
+                                Sembuwatta Lake is believed to be 9 m (30 ft) to 12 m (39 ft) deep. Currently, the lake belongs to the Elkaduwa Plantations and produces electricity for the nearby villagers. The lake and surrounds were renovated by Radley Dissage, the Elkaduwa Plantations estate superintendent, who connected the lake to nearby water fountains.[</p>
+                            <button onclick="window.location.href='https://en.wikipedia.org/wiki/Sembuwatta_Lake';">More</button>
+                        </div>
+                    </div>
+                </div>
         </div>
-      </div>
+    </div>
 
       <!-- Newsletter Start -->
       <div class="container newsletter mt-10 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 150px;">
@@ -262,7 +304,7 @@
     <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
         <div class="container " style="margin-left: 15%;">
             <div class="row g-5">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 col-sm-4 newsletterup">
                     <div class="bg-primary rounded p-4">
                         <a href="index.html"><h1 class="text-white text-uppercase mb-3">Hill Roost</h1></a>
                         <p class="text-white mb-0" style="text-align: justify;">
@@ -324,7 +366,108 @@
         </div>
     </div>
     <!-- Footer End -->
+<style>
+    /* General container and spacing adjustments */
+.footer {
+    padding: 40px 0;
+}
 
+.footer .container-fluid {
+    padding: 0 15px;
+}
+
+.footer .row {
+    margin: 0 auto;
+}
+
+/* Styling for smaller screens */
+@media (max-width: 768px) {
+    .newsletter{
+        margin-top: -15px;
+    }
+    .footer {
+        padding: 0 40px;
+        width: 100%;
+        margin-top: -15px;
+    }
+    .newsletterup{
+        width: 100%;
+    }
+
+    /* Adjust columns stacking for mobile */
+    .footer .col-md-6, .footer .col-lg-4, .footer .col-lg-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Centralize text for mobile */
+    .footer .text-md-start {
+        text-align: center !important;
+    }
+
+    .footer .btn-social {
+        margin: 0 5px;
+    }
+
+    /* Adjust the padding and size of social buttons */
+    .footer .btn-social {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    /* Footer links alignment */
+    .footer .btn-link {
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .footer .copyright .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-menu {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .footer .footer-menu a {
+        margin: 0 10px;
+    }
+
+    /* Adjust scroll to top button */
+    .footer .btn-lg-square {
+        display: block;
+        margin: 20px auto;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Styling for extra small screens (below 576px) */
+@media (max-width: 576px) {
+    .footer .col-md-6 {
+        margin-bottom: 10px;
+    }
+
+    .footer .btn-social {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer h6 {
+        font-size: 16px;
+    }
+
+    .footer p, .footer .btn-link {
+        font-size: 14px;
+    }
+}
+
+</style>
         
     <!-- Back to Top -->
     
